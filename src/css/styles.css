@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header, main, footer {
+    border: 1px solid black;
+}
+
+section {
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+}
