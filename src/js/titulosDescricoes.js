@@ -1,6 +1,7 @@
 const titulosDescricoes = {
     chamada: {
-        titulo:"JOGUE PARA GANHAR"
+        titulo:"JOGUE PARA GANHAR",
+        subtitulo:"DOMINE A QUADRA NO SEU ESTILO"
     },
     produtos: {
         titulo:"NOSSOS PRODUTOS"

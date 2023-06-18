@@ -1,5 +1,5 @@
-export default function Titulo2({titulo}){
+export default function Titulo2({subtitulo}){
     return(
-            <h2>{titulo}</h2>
+            <h2>{subtitulo}</h2>
     )
 }
