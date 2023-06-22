@@ -43,6 +43,7 @@ header{
     display: flex;
     gap: 20px;
     font-size: 20px;
+    z-index: 2;
 }
 
 h1{
@@ -54,15 +55,33 @@ h1{
 
 .callText > div{
 
-    width: 900px;
+    width: 100%;
     margin: auto;
 }
 
 .callText > div > div{
+    
     display: flex;
     align-items: center;
 }
 
+.iframe {
+
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    margin-top: 0;
+}
+
+.contentChamada{
+    height: 100%;
+    width: 900px;
+    position: relative;
+    z-index: 2;
+    margin-top: 100vh;
+}
 .callText h1{
 
     word-wrap: break-word;
@@ -113,5 +132,65 @@ h1{
     padding: 30px;
     border: 10px double darkgray;
 }
+
+
+/*CONVERSAO*/
+.containerConversaoReviews{
+
+    display: flex;
+    width: 100%;
+    margin: auto;
+
+}
+
+.conversao{
+    width: 70%;
+}
+
+.borda{
+    border: 1px solid white;
+    padding: 30px;
+}
+
+
+form{
+    display: inline-block;
+    width: 500px;
+    margin-top: 50px;
+    
+}
+
+input, textarea{
+
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 15px 0px;
+    outline: none;
+}
+
+label{
+    display: block;
+    width: 100%;
+}
+
+input[type="submit"]{
+
+    background-color: gray;
+    width: 40%;
+    border-radius: 20px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 
