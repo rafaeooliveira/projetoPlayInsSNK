@@ -15,7 +15,7 @@ font-family: 'Quantico', sans-serif; */
     font-family: 'Athiti', sans-serif;
 }
 
-header, main, footer {
+main, footer {
     border: 1px solid black;
     background-color: black;
 }
@@ -23,7 +23,6 @@ header, main, footer {
 section {
 
     text-align: center;
-    padding: 30px;
 }
 
 .sectionMarge{
@@ -43,6 +42,7 @@ header{
     display: flex;
     gap: 20px;
     font-size: 20px;
+    position: absolute;
     z-index: 2;
 }
 
@@ -65,18 +65,38 @@ h1{
     align-items: center;
 }
 
-.iframe {
-
+.video-container{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    position:absolute;
     z-index: 1;
-    position: absolute;
-    height: 100%;
-    width: 100%;
     top:0px;
-    margin-top: 0;
-}
+    margin-top: 0px;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:0.5;
+  }
+  .video-container iframe {
+    pointer-events: none;
+  }
+  .video-container iframe{
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 250px);
+  }
+  .video-foreground{
+    pointer-events:none;
+  }
 
 .contentChamada{
-    height: 100%;
+    height: 100vh;
     width: 900px;
     position: relative;
     z-index: 2;
@@ -98,7 +118,6 @@ h1{
     font-size: 36px;
     text-align: left;
     letter-spacing: -1px;
-
 }
 
 .callText img{
