@@ -22,7 +22,8 @@ const titulosDescricoes = {
         titulo:"Perguntas frequentes"
     },
     conversao: {
-        titulo:"Compre conosco"
+        titulo:"Compre conosco",
+        subtitulo:"Você tem alguma dúvida? Já escolheu o seu produto? Entre em contato conosco"
     },
     reviews: {
         titulo:"Reviews"

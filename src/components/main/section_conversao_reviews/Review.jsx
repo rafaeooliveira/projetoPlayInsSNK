@@ -1,10 +1,13 @@
-export default function Review({image,nome,avaliacao}){
+import Stars from '../../../img/stars.png'
+
+export default function Review({nome, image, avaliacao}){
 
     return(
         <div>
-            <img src={image} alt="" />
+            <img src={`src/img/${image}`} alt="" />
             <b>{nome}</b>
             <p>{avaliacao}</p>
+            <img src={Stars} alt="" />
         </div>
     )
 
