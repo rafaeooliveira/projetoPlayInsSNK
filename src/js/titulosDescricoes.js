@@ -10,7 +10,9 @@ const titulosDescricoes = {
         titulo:"DESTAQUES DA SEMANA"
     },
     galeria: {
-        titulo:"O FENOMENO NIKE AIR JORDAN"
+        titulo1:"O FENOMENO NIKE AIR JORDAN",
+        titulo2:"Recomendação de filme",
+        titulo3:"Recomendação de livro"
     },
     marcas: {
         titulo:"Nossas principais marcas"
@@ -22,7 +24,8 @@ const titulosDescricoes = {
         titulo:"Perguntas frequentes"
     },
     conversao: {
-        titulo:"Compre conosco"
+        titulo:"Compre conosco",
+        subtitulo:"Você tem alguma dúvida? Já escolheu o seu produto? Entre em contato conosco"
     },
     reviews: {
         titulo:"Reviews"

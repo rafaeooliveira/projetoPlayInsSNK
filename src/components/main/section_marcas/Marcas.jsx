@@ -1,10 +1,12 @@
 import Titulo from "../common/Titulo";
-import titulosDescricoes from "../../../js/titulosDescricoes.js"
+import MarcasImg from '../../../img/marcas.png'
 
 export default function Marcas(){
     return(
         <section>
-              <Titulo titulo={titulosDescricoes["marcas"].titulo}/>
+            <div className="marcas">
+              <img src={MarcasImg} alt="marcas que trabalhamos" />
+            </div>
         </section>
     )
 }
