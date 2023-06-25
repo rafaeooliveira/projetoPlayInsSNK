@@ -38,7 +38,7 @@ section {
 
 /* HEADER */
 
-header{
+.logoStyle{
     display: flex;
     gap: 20px;
     font-size: 20px;
@@ -52,17 +52,100 @@ h1{
 }
 
 /* CHAMADA */
-
-.callText > div{
-
+.callText{
+    height: 100vh;
     width: 100%;
-    margin: auto;
 }
-
-.callText > div > div{
-    
+#btnPlayHighlights{
+    background-color: #000000;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 1%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+}
+#btnPlayHighlights img{
+    height: 30px;
+}
+.callText > div{
+    margin: auto;
     display: flex;
     align-items: center;
+}
+
+.contentChamada{
+    margin: 0 auto;
+    height: 700px;
+    width: 1200px;
+    position: relative;
+    z-index: 2;
+    transition: transform 3s ease;
+}
+
+.retirarContentChamada{
+    transform: scale(0.001)  translate(100%);
+}
+
+.caixaTitulo1Chamada{
+    z-index: 1;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    margin-left: 25%;
+    text-align: left;
+}
+.caixaTitulo1Chamada h1{
+    height: 100%;
+    font-size: 120px;
+    font-family: 'Quantico', sans-serif; 
+    text-shadow: darkgray 2px 2px 10px;
+    
+
+}
+.caixaTitulo2Chamada{
+    height: 32px;
+    width: 450px;
+    z-index: 2;
+    position:relative;
+    margin-top: 530px;
+    margin-left: -750px;
+}
+
+.caixaTitulo2Chamada  h2 {
+    font-weight: bolder;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+#tenis{
+    position: relative;
+    z-index: 3;
+    width: 500px;
+    margin-top:-40%;
+    margin-left: -55px;
+    opacity: 1;
+}
+#bola{
+    position: absolute;
+    z-index: 2;
+    height: 335px;
+    width: 335px;
+    background-color: #413e3e;
+    border: 1px solid white;
+    opacity: 0.5;
+    border-radius: 335px;
+    display: inline-block;
+    margin-top: 0%;
+}
+.caixaImagensChamada{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    width: 370px;
+    height: 335px;
+    margin-top: -60px;
+    margin-left: 700px;
 }
 
 .video-container{
@@ -80,50 +163,96 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity:0.5;
-  }
-  .video-container iframe {
+    opacity:0.3;
     pointer-events: none;
-  }
-  .video-container iframe{
     top: -60px;
     left: 0;
     width: 100%;
     height: calc(100% + 250px);
+    transition: opacity 3s ease;
   }
+
+  .video-container-alto iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    pointer-events: none;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 250px);
+    transition: opacity 3s ease;
+  }
+
   .video-foreground{
     pointer-events:none;
   }
+  .mostrarVideo{
+    opacity:1;
+  }
 
-.contentChamada{
-    height: 100vh;
-    width: 900px;
-    position: relative;
-    z-index: 2;
-    margin-top: 100vh;
-}
-.callText h1{
+  @media screen and (max-width: 1200px) {
+    .contentChamada{
+        height: 350px;
+        width: 600px;
+    }
+    
+    .caixaTitulo1Chamada{
+        height: 150px;
+        width: 300px;
+        margin-left: 15%;
+    }
+    .caixaTitulo1Chamada h1{
+        height: 100%;
+        font-size: 60px;
+    
+    }
+    .caixaTitulo2Chamada{
+        height: 25px;
+        width: 700px;
+        margin-top: 530px;
+        margin-right: 48%;
+        margin-top: 50%;
+    }
+    
+    .caixaTitulo2Chamada  h2 {
+        font-size: 15px;
+    }
+    
+   
+    #bola {
+      display: none;
+    }
+    #tenis{
+        display: none;
+    }
+    #btnPlayHighlights{
+        display: none;
+    }
+    #ytplayer{
+        display: none;
+    }
 
-    word-wrap: break-word;
-    height: 100%;
-    margin: 80px 0px 0px 0px;
-    font-size: 90px;
-    text-align: left;
-    font-family: 'Quantico', sans-serif; 
-    text-shadow: darkgray 2px 2px 10px;
-}
+  }
 
-.callText  h2 {
-    font-weight: bolder;
-    font-size: 36px;
-    text-align: left;
-    letter-spacing: -1px;
-}
+  /*@media screen and (max-width: 1250px) {
+    .ball {
+      display: none;
+    }
+    #imgTenisChamada{
+        display: none;
+    }
+    .video-container{
+        display: none;
+    }
+    #btnPlayHighlights{
+        display: none;
+    }
 
-.callText img{
-    width: 500px;
-}
-
+  }*/
 
 /* PRODUTOS */
 
