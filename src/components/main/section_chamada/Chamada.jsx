@@ -15,7 +15,7 @@ export default function Chamada(){
     const tirarTexto = useRef(null);
 
     useEffect(()=>{
-        //callApiAllSportsForAdquireURLVideo();
+        callApiAllSportsForAdquireURLVideo();
     })
 
 
@@ -42,11 +42,6 @@ export default function Chamada(){
             }
 
         let urlFormattedForIframe = "http://www.youtube.com/embed/"+codeVideoYoutube+"?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist="+codeVideoYoutube;
-
-         console.log(data);
-         console.log(urlTopFive);
-         console.log(urlFormattedForIframe);
-
          setUrlHightlights(urlFormattedForIframe);
     
     })
@@ -77,7 +72,7 @@ export default function Chamada(){
                     </div>
             </div>
             <div className={`video-container ${opacidade === 1 ? 'video-container-alto' : 'video-container'}`}>
-                <iframe id="ytplayer"  type="text/html" width="100%" height="100%" src="http://www.youtube.com/embed/9GpO-dd-Amg&ab_channel=NBA?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist=9GpO-dd-Amg&ab_channel=NBA" title="NBA Top Plays"/>                
+                <iframe id="ytplayer"  type="text/html" width="100%" height="100%" src={urlHightlights} title="NBA Top Plays"/>                
             </div>
         </section>
     )
