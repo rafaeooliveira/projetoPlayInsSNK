@@ -1,11 +1,11 @@
 @media screen and (max-width: 800px) {
 
-    .containerConversaoReviews, .destaques, .sobreFaq, .jordan, .livro{
+    .containerConversaoReviews, .destaques, .sobreFaq, .jordan, .livro {
 
         flex-direction: column;
     }
-    
-    h1{
+
+    h1 {
         font-size: 30px;
     }
 
@@ -13,36 +13,84 @@
         font-size: 16px;
     }
 
-    h2{
+    h2 {
         font-size: 24px;
+    }
+
+    /* CHAMADA */
+
+    .contentChamada {
+        height: 350px;
+        width: 600px;
+    }
+
+    .caixaTitulo1Chamada {
+        height: 150px;
+        width: 300px;
+        margin-left: 15%;
+    }
+
+    .caixaTitulo1Chamada h1 {
+        height: 100%;
+        font-size: 60px;
+
+    }
+
+    .caixaTitulo2Chamada {
+        height: 25px;
+        width: 700px;
+        margin-top: 530px;
+        margin-right: 48%;
+        margin-top: 50%;
+    }
+
+    .caixaTitulo2Chamada h2 {
+        font-size: 15px;
+    }
+
+
+    #bola {
+        display: none;
+    }
+
+    #tenis {
+        display: none;
+    }
+
+    #btnPlayHighlights {
+        display: none;
+    }
+
+    #ytplayer {
+        display: none;
     }
 
     /* DESTAQUES */
 
-    .fundo{
-        background-color: black; 
+    .fundo {
+        background-color: black;
         width: 80%;
         margin: auto;
-        
+
     }
 
     /* GALERIA */
-    .jordan{
+    .jordan {
         gap: 20px;
     }
 
-    .jordan p , .livro p{
+    .jordan p, .livro p {
         padding: 5px;
         font-size: 16px;
     }
 
-    .jordan img{
+    .jordan img {
         width: 80%;
         height: 80%;
         margin: auto;
     }
 
-    .tenis{
+    .tenis {
         flex-direction: column;
     }
 
@@ -50,23 +98,23 @@
         width: 100%;
     }
 
-    .filme{
+    .filme {
         align-items: center;
         background-color: cadetblue;
     }
-    
-    .filme iframe{
+
+    .filme iframe {
         width: 560px;
         height: 315px;
     }
 
-    .livro img{
+    .livro img {
         width: 80%;
         margin: auto;
     }
 
     /* SOBRE/FAQ */
-    .sobre{
+    .sobre {
         width: 100%;
         border: none;
         padding: 20px;
@@ -76,15 +124,15 @@
         padding: 20px;
     }
 
-    .sobre img{
+    .sobre img {
         width: 40%;
     }
 
-    .faq{
+    .faq {
         padding: 10px;
     }
 
-    .faq p, summary{
+    .faq p, summary {
         font-size: 18px;
     }
 
@@ -94,7 +142,7 @@
         width: 100%;
     }
 
-    .containerborda{
+    .containerborda {
         border: none;
     }
 
