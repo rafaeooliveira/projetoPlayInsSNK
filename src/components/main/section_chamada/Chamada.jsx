@@ -73,7 +73,7 @@ export default function Chamada(){
                         <img id="tenis" src={Tenis}/>   
                     </div>
                     <div className="caixaTitulo2Chamada">
-                    <Titulo2 subtitulo={titulosDescricoes.chamada.subtitulo} />
+                    <Titulo2 titulo={titulosDescricoes.chamada.subtitulo} />
                     </div>
             </div>
             <div className={`video-container ${opacidade === 1 ? 'video-container-alto' : 'video-container'}`}>

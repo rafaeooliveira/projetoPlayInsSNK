@@ -1,6 +1,6 @@
 @media screen and (max-width: 800px) {
 
-    .containerConversaoReviews, .destaques, .sobreFaq, .contentChamada > div, .jordan, .livro{
+    .containerConversaoReviews, .destaques, .sobreFaq, .jordan, .livro{
 
         flex-direction: column;
     }
