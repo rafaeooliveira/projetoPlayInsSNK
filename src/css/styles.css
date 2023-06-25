@@ -137,31 +137,87 @@ h1{
     
 }
 
-
 .destaques  p, .destaques  h3, .destaques  button{
     margin: 18px;
 }
 
 .destaques img{
-    width: 285px;
-    height: 244px;
+    width: 275px;
+    height: 234px;
+    margin-bottom: 40px;
+
 }
 
 .fundo{
     background-color: white;
     border-radius: 50%;
-    padding: 30px;
+    padding: 5px;
     border: 10px double darkgray;
 }
 
+/* GALERIA */
+
+/* Slide historia do Jordan */
+.jordan,.livro{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.jordan p {
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+}
+
+.jordan > img{
+    border: 4px solid wheat;
+    border-radius: 20px;
+    height: 374px;
+}
+
+.tenis{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.tenis p{
+    width: 30%;
+    font-weight: bold;
+}
+
+/* Slide Filme */
+.filme{
+
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Slide livro */
+.livro p {
+    text-align: justify;
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+/* MARCAS */
+
+.marcas img {
+    width: 90%;
+}
 
 /*CONVERSAO*/
 .containerConversaoReviews{
-
     display: flex;
     width: 100%;
     margin: auto;
-
 }
 
 .conversao{
@@ -222,6 +278,7 @@ input[type="submit"]{
 .sobre p{
     width: 100%;
     font-size: 16px;
+    text-align: justify ;
 }
 
 details{

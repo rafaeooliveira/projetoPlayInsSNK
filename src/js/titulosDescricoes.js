@@ -10,7 +10,9 @@ const titulosDescricoes = {
         titulo:"DESTAQUES DA SEMANA"
     },
     galeria: {
-        titulo:"O FENOMENO NIKE AIR JORDAN"
+        titulo1:"O FENOMENO NIKE AIR JORDAN",
+        titulo2:"Recomendação de filme",
+        titulo3:"Recomendação de livro"
     },
     marcas: {
         titulo:"Nossas principais marcas"

@@ -1,0 +1,102 @@
+@media screen and (max-width: 800px) {
+
+    .containerConversaoReviews, .destaques, .sobreFaq, .contentChamada > div, .jordan, .livro{
+
+        flex-direction: column;
+    }
+    
+    h1{
+        font-size: 30px;
+    }
+
+    p, b {
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    /* DESTAQUES */
+
+    .fundo{
+        background-color: black; 
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    /* GALERIA */
+    .jordan{
+        gap: 20px;
+    }
+
+    .jordan p , .livro p{
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .jordan img{
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+
+    .tenis{
+        flex-direction: column;
+    }
+
+    .tenis p {
+        width: 100%;
+    }
+
+    .filme{
+        align-items: center;
+        background-color: cadetblue;
+    }
+    
+    .filme iframe{
+        width: 560px;
+        height: 315px;
+    }
+
+    .livro img{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* SOBRE/FAQ */
+    .sobre{
+        width: 100%;
+        border: none;
+        padding: 20px;
+    }
+
+    .sobre p {
+        padding: 20px;
+    }
+
+    .sobre img{
+        width: 40%;
+    }
+
+    .faq{
+        padding: 10px;
+    }
+
+    .faq p, summary{
+        font-size: 18px;
+    }
+
+    /* CONVERSAO / PROVA */
+    .conversao {
+        text-align: center;
+        width: 100%;
+    }
+
+    .containerborda{
+        border: none;
+    }
+
+
+}
