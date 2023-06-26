@@ -4,7 +4,6 @@ import Botao from "./Botao";
 
 export default function Card({image, titulo, valor}) {
 
-
     return (
         <div>
             <div className="fundo">
@@ -13,9 +12,7 @@ export default function Card({image, titulo, valor}) {
             
             <Titulo3  titulo={titulo}/>
             <p>Valor: R${valor}</p>
-            <Botao value={"Quero"} />
-            
-
+            <Botao value={"Quero"} titulo={titulo}/>
         </div>
     )
 

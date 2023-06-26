@@ -83,7 +83,6 @@ export default function Galeria() {
                         </p>
                     </div>
                 </SwiperSlide>
-                ...
             </Swiper>
 
 
