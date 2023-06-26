@@ -41,7 +41,7 @@ export default function Chamada(){
                 codeVideoYoutube = urlTopFive[0].substring(32, urlTopFive[0].indexOf("&"));
             }
 
-        let urlFormattedForIframe = "http://www.youtube.com/embed/"+codeVideoYoutube+"?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist="+codeVideoYoutube;
+        let urlFormattedForIframe = "https://www.youtube.com/embed/"+codeVideoYoutube+"?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist="+codeVideoYoutube;
          setUrlHightlights(urlFormattedForIframe);
     
     })
