@@ -3,7 +3,7 @@ import MarcasImg from '../../../img/marcas.png'
 
 export default function Marcas(){
     return(
-        <section>
+        <section id="marcas">
             <div className="marcas">
               <img src={MarcasImg} alt="marcas que trabalhamos" />
             </div>

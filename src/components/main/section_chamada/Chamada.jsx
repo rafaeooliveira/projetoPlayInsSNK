@@ -48,12 +48,9 @@ export default function Chamada(){
 }
    
     const playVideoFullView = () => {
-        console.log("CLICK");
         tirarTexto.current.classList.toggle('retirarContentChamada');
         const novaOpacidade = opacidade === 0.5 ? 1 : 0.5;
-        console.log(novaOpacidade);
         setOpacidade(novaOpacidade);
-
     }   
 
     return(
