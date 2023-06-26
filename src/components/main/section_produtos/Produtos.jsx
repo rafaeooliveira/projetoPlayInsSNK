@@ -14,7 +14,7 @@ import Titulo3 from "../common/Titulo3";
 
 export default function Produtos(){
     return(
-        <section className="sectionMarge">
+        <section id="produtos" className="sectionMarge">
            <Titulo titulo={titulosDescricoes["produtos"].titulo}/>
            <div className="cards">
             <Titulo3 titulo={"Tênis"} />

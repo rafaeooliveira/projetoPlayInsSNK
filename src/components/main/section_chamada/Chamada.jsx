@@ -57,7 +57,7 @@ export default function Chamada(){
     }   
 
     return(
-        <section className="callText" >  
+        <section id="chamada" className="callText" >  
             <button id="btnPlayHighlights" onClick={playVideoFullView} title="Assista os hightlights"><img src={IconPlayWhite}/></button>
             <div ref={tirarTexto} className="contentChamada">
                     <div className="caixaTitulo1Chamada">

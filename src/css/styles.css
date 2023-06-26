@@ -34,6 +34,39 @@ section {
     border: 1px solid white;
 }
 
+#menu {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+#menu li {
+    margin-top: 5px;
+}
+
+.linkMenu {
+    background-color: #000000;
+    border: 1px solid #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    display: block;
+}
+.linkMenu:hover {
+    background-color: #ffffff;
+    border: 1px solid #070707;
+}
+.linkMenu:focus {
+    background-color: #ffffff;
+    border: 1px solid #070707;
+}
+
 .swiper-pagination-bullet {
     background-color: lightgray;
 }

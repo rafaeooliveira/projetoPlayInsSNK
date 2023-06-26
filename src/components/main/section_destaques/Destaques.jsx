@@ -9,7 +9,7 @@ import Card from "../common/Card";
 
 export default function Destaques(){
     return(
-        <section className="sectionMarge">
+        <section id="destaques" className="sectionMarge">
             <Titulo titulo={titulosDescricoes["destaques"].titulo}/>
             <div className="destaques">
                 

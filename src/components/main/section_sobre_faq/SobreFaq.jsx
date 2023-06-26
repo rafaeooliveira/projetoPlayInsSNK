@@ -16,7 +16,7 @@ export default function SobreFaq() {
 
 
     return (
-        <section className="sobreFaq">
+        <section id="sobreFaq" className="sobreFaq">
             <div className="sobre">
                 <img src={Logo} alt="" />
                 <Titulo2 titulo={titulosDescricoes["sobre"].titulo} />

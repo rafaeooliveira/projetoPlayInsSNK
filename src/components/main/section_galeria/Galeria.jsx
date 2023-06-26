@@ -14,7 +14,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar, A11y, Controll
 export default function Galeria() {
 
     return (
-        <section className="sectionMarge">
+        <section id="galeria" className="sectionMarge">
 
 
 
