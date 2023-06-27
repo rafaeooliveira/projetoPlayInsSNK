@@ -42,6 +42,18 @@ section {
     list-style: none;
     padding: 0;
     margin: 0;
+    
+}
+
+.barra-menu-navegation{
+    background-color: black;
+    border: 1px solid white;
+    width: 8px;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -6px;
 }
 
 .navigation-menu li {
@@ -52,6 +64,7 @@ section {
     background-color: #020202;
     border: 1px solid white;
     margin-top: 5px;
+    position: relative;
 }
 
 .navigation-menu li a {
