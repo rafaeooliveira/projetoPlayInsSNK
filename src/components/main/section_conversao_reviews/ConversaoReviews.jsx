@@ -66,10 +66,10 @@ export default function ConversaoReviews() {
 
                 <div className="provaSocial">
 
-                    <div className="containerborda">
-                        <Review nome={reviewsclientes.cliente1.nome} image={reviewsclientes.cliente1.imagem} avaliacao={reviewsclientes.cliente1.avaliacao}/>
-                        <Review nome={reviewsclientes.cliente2.nome} image={reviewsclientes.cliente2.imagem} avaliacao={reviewsclientes.cliente2.avaliacao}/>
-                        <Review nome={reviewsclientes.cliente3.nome} image={reviewsclientes.cliente3.imagem} avaliacao={reviewsclientes.cliente3.avaliacao}/>
+                <div className="containerborda">
+                        <Review nome={reviewsclientes[0].nome} image={reviewsclientes[0].imagem} avaliacao={reviewsclientes[0].avaliacao}/>
+                        <Review nome={reviewsclientes[1].nome} image={reviewsclientes[1].imagem} avaliacao={reviewsclientes[1].avaliacao}/>
+                        <Review nome={reviewsclientes[2].nome} image={reviewsclientes[2].imagem} avaliacao={reviewsclientes[2].avaliacao}/>
                     </div>
                     
 
