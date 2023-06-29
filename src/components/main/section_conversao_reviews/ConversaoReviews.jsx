@@ -52,13 +52,13 @@ export default function ConversaoReviews() {
 
                     <form onSubmit={enviarEmail}>
                         <label>Nome:</label>
-                        <input type="text" onChange={(e) => setNome(e.target.value)} />
+                        <input type="text" onChange={(e) => setNome(e.target.value)} required/>
                         <label>E-mail:</label>
-                        <input type="email" onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" onChange={(e) => setEmail(e.target.value)} required/>
                         <label>Telefone:</label>
-                        <input type="tel" onChange={(e) => setTelefone(e.target.value)} />
+                        <input type="tel" onChange={(e) => setTelefone(e.target.value)} required/>
                         <label>Mensagem:</label>
-                        <textarea cols="30" rows="10" onChange={(e) => setMensagem(e.target.value)}>
+                        <textarea cols="30" rows="5" onChange={(e) => setMensagem(e.target.value)}>
                         </textarea>
                         <input type="submit" value="Enviar" />
                     </form>
