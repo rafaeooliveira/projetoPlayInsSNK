@@ -8,7 +8,7 @@ export default function ImgCard({ image, categoryName }) {
         color: 'black',
         backgroundColor: 'white',
         width: '100%',
-        fontSize: '24px',
+        fontSize: '1em',
         fontWeight: 'bold',
         zIndex: 1,
         opacity: 0.6

@@ -6,15 +6,19 @@
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
-    p, b {
-        font-size: 16px;
+    p, b, summary, span {
+        font-size: 14px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 16px;
     }
 
     .navigation-menu{
@@ -24,14 +28,22 @@
     /* CHAMADA */
 
     .contentChamada {
-        height: 350px;
-        width: 600px;
+        all: initial;
+        margin: 0 auto;
+        height: 700px;
+        position: relative;
+        z-index: 2;
+        transition: transform 3s ease;
     }
 
     .caixaTitulo1Chamada {
-        height: 150px;
-        width: 300px;
-        margin-left: 15%;
+        all: initial;
+        z-index: 1;
+        height: 400px;
+        width: 500px;
+        margin-left: 25%;
+        text-align: left;
+        color: white;
     }
 
     .caixaTitulo1Chamada h1 {
@@ -46,6 +58,7 @@
         margin-top: 530px;
         margin-right: 48%;
         margin-top: 50%;
+        display: none;
     }
 
     .caixaTitulo2Chamada h2 {
@@ -65,8 +78,17 @@
         display: none;
     }
 
-    #ytplayer {
-        display: none;
+    /* PRODUTOS */
+
+      .cards{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        
+    }
+
+    .cards img{
+        width: 100%;
     }
 
     /* DESTAQUES */
@@ -75,7 +97,7 @@
         background-color: black;
         width: 80%;
         margin: auto;
-
+        border: none;
     }
 
     /* GALERIA */
@@ -136,8 +158,13 @@
         padding: 10px;
     }
 
-    .faq p, summary {
-        font-size: 18px;
+    .sobre p {
+        font-size: 14px;
+        
+    }
+
+    details p {
+        font-size: 14px;
     }
 
     /* CONVERSAO / PROVA */
@@ -150,5 +177,8 @@
         border: none;
     }
 
+    form{
+        width: 80%;
+    }
 
 }
