@@ -1,0 +1,14 @@
+{
+    "produtos": [
+      { "image": "tenis_basketball.png", "name": "Basketball"},
+      { "image": "tenis_life_style.png", "name": "LifeStyle"},
+      { "image": "tenis_performace.png", "name": "Performace"},
+      { "image": "camisetas.png", "name": "Camisetas"},
+      { "image": "moletons.png", "name": "Moletons"},
+      { "image": "shorts.png", "name": "Shorts"},
+      { "image": "bones.png", "name": "Bones"},
+      { "image": "meias.png", "name": "Meias"},
+      { "image": "faixas.png", "name": "Faixas"}
+      
+    ]
+  }

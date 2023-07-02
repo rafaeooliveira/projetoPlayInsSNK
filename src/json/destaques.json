@@ -1,0 +1,16 @@
+{
+    "destaques": [
+      { "image": "", "title": "NIKE ZOOM FREAK 4", "price": 1899 },
+      { "image": "", "title": "AIR PENNY 2 x Stüssy", "price": 1599 },
+      { "image": "", "title": "AIR JORDAN 3", "price": 1899 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 },
+      { "image": "", "title": "", "price": 1000 }
+    ]
+  }
