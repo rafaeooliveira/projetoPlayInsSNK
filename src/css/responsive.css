@@ -17,11 +17,11 @@
         font-size: 20px;
     }
 
-    h3{
+    h3 {
         font-size: 16px;
     }
 
-    .navigation-menu{
+    .navigation-menu {
         display: none;
     }
 
@@ -36,12 +36,16 @@
         transition: transform 3s ease;
     }
 
+    .retirarContentChamada {
+        transform: scale(0.001) translate(100%);
+    }
+
     .caixaTitulo1Chamada {
         all: initial;
         z-index: 1;
         height: 400px;
-        width: 500px;
-        margin-left: 25%;
+        width: 300px;
+        margin-left: 10%;
         text-align: left;
         color: white;
     }
@@ -53,42 +57,68 @@
     }
 
     .caixaTitulo2Chamada {
+        all: initial;
+        color: white;
         height: 25px;
         width: 700px;
-        margin-top: 530px;
-        margin-right: 48%;
-        margin-top: 50%;
-        display: none;
+        margin-top: 50px;
+        margin-left: -325px;
     }
 
     .caixaTitulo2Chamada h2 {
         font-size: 15px;
     }
 
+    .caixaImagensChamada {
+        all: initial;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        margin-top: -195px;
+        margin-left: -70px;
+    }
 
     #bola {
-        display: none;
+        position: absolute;
+        z-index: 2;
+        height: 125px;
+        width: 125px;
+        border-radius: 125px;
+        display: inline-block;
+        margin-top: 0%;
     }
 
     #tenis {
-        display: none;
+        position: relative;
+        z-index: 3;
+        width: 175px;
+        margin-top: -30%;
+        margin-left: -20px;
     }
 
     #btnPlayHighlights {
-        display: none;
+        all: initial;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        z-index: 3;
+        background-color: #000000;
+        border-radius: 50%;
     }
 
     /* PRODUTOS */
 
       /* .cards{
+    .cards {
         display: flex;
         justify-content: space-around;
         flex-wrap: nowrap;
         padding: 20px;
-        
+
     }
 
-    .cards img{
+    .cards img {
         width: 100%;
     } */
 
@@ -161,7 +191,7 @@
 
     .sobre p {
         font-size: 14px;
-        
+
     }
 
     details p {
@@ -178,7 +208,7 @@
         border: none;
     }
 
-    form{
+    form {
         width: 80%;
     }
 
