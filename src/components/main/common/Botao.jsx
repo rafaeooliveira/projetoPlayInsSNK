@@ -17,7 +17,7 @@ const botao = {
     backgroundColor: '#40C351',
     paddingRight: '15px',
     borderRadius: '10px',
-    width: '166px',
+    width: '135px',
     fontWeight: 'bolder',
     fontSize: '24px',
     border: '3px solid white',
@@ -29,7 +29,7 @@ const botao = {
 
     return(
         
-        <button style={botao} onClick={handleWhatsAppClick}>{value}</button>
+        <button className="btnWhats" style={botao} onClick={handleWhatsAppClick}>{value}</button>
     )
 
 }
