@@ -441,6 +441,12 @@ h1 {
 
 }
 
+.feedback-aguarde {
+    border: 1px solid #a4a4a4;
+    color: #a4a4a4;
+
+}
+
 
 @keyframes fadeOut {
     0% {
@@ -472,6 +478,10 @@ form {
     width: 500px;
     margin-top: 50px;
 
+}
+form p{
+    color: chocolate;
+    margin-top: -10px;
 }
 
 input, textarea {

@@ -16,7 +16,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Scrollbar, A11y, Controller } from "swiper";
 
 export default function Produtos() {
     const [produtos, setProdutos] = useState("");

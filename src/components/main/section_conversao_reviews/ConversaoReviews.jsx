@@ -8,12 +8,10 @@ import { useForm } from "react-hook-form";
 import InputMask from "react-input-mask";
 
 export default function ConversaoReviews() {
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [telefone, setTelefone] = useState('');
-    const [mensagem, setMensagem] = useState('');
     const [envioSucesso, setEnvioSucesso] = useState(false);
     const [envioFalhou, setEnvioFalhou] = useState(false);
+    const [aguardeEnvio, setAguardeEnvio] = useState(false);
+
     const { register, handleSubmit, formState: { errors }, reset, setValue } = useForm();
 
 
@@ -30,7 +28,7 @@ export default function ConversaoReviews() {
                 email: email,
                 tel: telefone
             };
-            exibirFeedbackFalha();
+            exibirAguardeProcessamento();
             emailJs.send("service_zke41p9", "template_4mlvp75", templateParams, "mMwq80vFq078Vm7Ke")
                 .then((response) => {
                     reset();
@@ -54,6 +52,13 @@ export default function ConversaoReviews() {
         setEnvioFalhou(true);
         setTimeout(() => {
             setEnvioFalhou(false);
+        }, 3000);
+    }
+
+    function exibirAguardeProcessamento() {
+        setAguardeEnvio(true)
+        setTimeout(() => {
+            setAguardeEnvio(false);
         }, 3000);
     }
 
@@ -115,6 +120,11 @@ export default function ConversaoReviews() {
                     {envioFalhou && (
                         <div className="feedback feedback-falha">
                             Ocorreu um erro ao enviar o email. Por favor, tente novamente mais tarde.
+                        </div>
+                    )}
+                    {aguardeEnvio && (
+                        <div className="feedback feedback-aguarde">
+                            Aguarde, estamos enviando seu email.
                         </div>
                     )}
                 </div>
