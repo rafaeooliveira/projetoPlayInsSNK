@@ -45,6 +45,10 @@ export default function Chamada(){
          setUrlHightlights(urlFormattedForIframe);
     
     })
+    .catch(error => {
+        setUrlHightlights("https://www.youtube.com/embed/jbW4f60dCNA?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist=jbW4f60dCNA");
+        console.log(error)
+    });
 }
    
     const playVideoFullView = () => {
