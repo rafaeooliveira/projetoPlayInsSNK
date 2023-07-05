@@ -21,6 +21,12 @@ import { Navigation, Pagination, Scrollbar, A11y, Controller } from "swiper";
 export default function Produtos() {
     const [produtos, setProdutos] = useState("");
 
+    const swiperParams = {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: true,
+    };
+
     const produtosJSON = {
         tenis: [
             {
@@ -97,12 +103,7 @@ export default function Produtos() {
         setProdutos(
             <>
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    navigation={true}
-                    scrollbar={true}
-                    pagination={true}
+                   {...swiperParams}
                 >
                     {produtosJSON.tenis.map((produto, index) => (
                         <SwiperSlide key={index}>
@@ -115,12 +116,7 @@ export default function Produtos() {
                 </Swiper>
 
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    navigation={true}
-                    scrollbar={true}
-                    pagination={true}
+                    {...swiperParams}
                 >
                     {produtosJSON.diaadia.map((produto, index) => (
                         <SwiperSlide key={index}>
@@ -133,12 +129,7 @@ export default function Produtos() {
                 </Swiper>
 
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    navigation={true}
-                    scrollbar={true}
-                    pagination={true}
+                    {...swiperParams}
                 >
                     {produtosJSON.acessorios.map((produto, index) => (
                         <SwiperSlide key={index}>
