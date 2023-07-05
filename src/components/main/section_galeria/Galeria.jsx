@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar, A11y, Controller } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar, A11y, Controller, Autoplay } from "swiper";
 import { useState } from "react";
 
 export default function Galeria() {
@@ -24,24 +24,28 @@ export default function Galeria() {
         'E um forro macio e escovado torna este AJ4 mais feliz do que uma manhã preguiçosa. Então, da próxima vez que você calçar' +
         'para completar um look inspirador, busque pelo seu novo favorito...';
 
-    const textLivro = ' Phil Knight, o homem por trás da Nike, sempre foi uma figura envolta em mistério. Agora, neste livro franco e'+
-    'surpreendente, ele conta sua história.'+
-    'Aos 24 anos, depois de se formar e viajar como mochileiro pelo mundo, Knight decidiu que não seguiria um'+
-    'caminho convencional. Em vez de trabalhar para uma grande corporação, iria à luta para criar algo próprio,'+
-    'dinâmico e diferente.'+
-    'Com 50 dólares emprestados pelo pai, ele abriu em 1963 uma empresa com uma missão simples: importar do'+
-    'Japão tênis de alta qualidade e baixo custo. E mal acreditou quando conseguiu vender rapidamente todos os'+
-    'calçados de suas primeiras encomendas.'+
-    'Mas o caminho até tornar a Nike uma das marcas mais emblemáticas, inovadoras e rentáveis do mundo não foi'+
-    'fácil, e Knight fala em detalhes dos riscos que enfrentou, dos concorrentes implacáveis e de seus muitos triunfos'+
-    'e golpes de sorte.'+
-    'Ele relembra a criação do nome e da logomarca – um dos poucos ícones reconhecidos em todos os cantos do'+
-    'planeta –, os primeiros modelos de tênis e os contratos com grandes atletas. Também destaca as relações com'+
-    'as pessoas que formariam a alma da Nike: seu ex-treinador de corrida, Bill Bowerman, e os primeiros'+
-    'funcionários, um grupo de desajustados geniais que rapidamente se tornou uma família.'+
-    'Com uma visão ousada e a crença no poder transformador do esporte, juntos eles criaram uma marca e uma'+
-    'cultura que mudariam os parâmetros de desempenho e superação para sempre.';    
+    const textLivro = ' Phil Knight, o homem por trás da Nike, sempre foi uma figura envolta em mistério. Agora, neste livro franco e' +
+        'surpreendente, ele conta sua história.' +
+        'Aos 24 anos, depois de se formar e viajar como mochileiro pelo mundo, Knight decidiu que não seguiria um' +
+        'caminho convencional. Em vez de trabalhar para uma grande corporação, iria à luta para criar algo próprio,' +
+        'dinâmico e diferente.' +
+        'Com 50 dólares emprestados pelo pai, ele abriu em 1963 uma empresa com uma missão simples: importar do' +
+        'Japão tênis de alta qualidade e baixo custo. E mal acreditou quando conseguiu vender rapidamente todos os' +
+        'calçados de suas primeiras encomendas.' +
+        'Mas o caminho até tornar a Nike uma das marcas mais emblemáticas, inovadoras e rentáveis do mundo não foi' +
+        'fácil, e Knight fala em detalhes dos riscos que enfrentou, dos concorrentes implacáveis e de seus muitos triunfos' +
+        'e golpes de sorte.' +
+        'Ele relembra a criação do nome e da logomarca – um dos poucos ícones reconhecidos em todos os cantos do' +
+        'planeta –, os primeiros modelos de tênis e os contratos com grandes atletas. Também destaca as relações com' +
+        'as pessoas que formariam a alma da Nike: seu ex-treinador de corrida, Bill Bowerman, e os primeiros' +
+        'funcionários, um grupo de desajustados geniais que rapidamente se tornou uma família.' +
+        'Com uma visão ousada e a crença no poder transformador do esporte, juntos eles criaram uma marca e uma' +
+        'cultura que mudariam os parâmetros de desempenho e superação para sempre.';
 
+    const autoplayOptions = {
+        delay: 3000,
+        disableOnInteraction: true,
+    };
 
     return (
         <section id="galeria" className="sectionMarge">
@@ -49,13 +53,13 @@ export default function Galeria() {
 
 
             <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
+                modules={[Navigation, Pagination, Scrollbar, A11y, Controller, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation={true}
                 scrollbar={true}
                 pagination={true}
-
+                autoplay={autoplayOptions}
             >
                 <SwiperSlide>
                     <Titulo titulo={titulosDescricoes["galeria"].titulo1} />
