@@ -22,14 +22,15 @@ export default function ConversaoReviews() {
 
         if (!nome || !email || !telefone || !mensagem) {
             alert("Preencha todos os campos");
-        } else {
+        } 
+        else {
             const templateParams = {
                 from_name: nome,
                 message: mensagem,
                 email: email,
                 tel: telefone
             };
-
+            exibirFeedbackFalha();
             emailJs.send("service_zke41p9", "template_4mlvp75", templateParams, "mMwq80vFq078Vm7Ke")
                 .then((response) => {
                     reset();
