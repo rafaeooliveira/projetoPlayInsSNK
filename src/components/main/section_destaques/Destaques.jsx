@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 
-import "swiper/css";
+import 'swiper/css';
 import Titulo from '../common/Titulo';
 import titulosDescricoes from '../../../js/titulosDescricoes.js';
 import Botao from '../common/Botao';
@@ -11,7 +11,7 @@ import Destaque1 from '../../../img/destaque1.png';
 import Destaque2 from '../../../img/destaque2.png';
 import Destaque3 from '../../../img/destaque3.png';
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default function Destaques() {
     const [slidesPerView, setSlidesPerView] = useState(3);
@@ -39,7 +39,11 @@ export default function Destaques() {
         slidesPerView: slidesPerView,
         spaceBetween: 10,
         navigation: true,
-      };
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    };
 
     const produtos = [
         {
@@ -105,7 +109,7 @@ export default function Destaques() {
                 {produtos.map((produto) => (
                     <SwiperSlide key={produto.id}>
                         <div className="cardDestaques">
-                            <div className='caixaImgCard'>
+                            <div className="caixaImgCard">
                                 <img src={produto.imagem} alt={`Destaque ${produto.id}`} />
                             </div>
                             <h2>{produto.titulo}</h2>
