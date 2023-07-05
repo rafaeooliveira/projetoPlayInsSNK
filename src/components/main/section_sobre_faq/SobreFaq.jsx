@@ -9,10 +9,15 @@ export default function SobreFaq() {
 
   
     function getFaqs() {
-      return (
-        PerguntasRespostas.map((faq,indice) => { return <details key={indice}><summary>{faq.pergunta}</summary><p>{faq.resposta}</p></details>})  
-      )
-    }
+        return PerguntasRespostas.map((faq, index) => (
+          <details key={index}>
+            <summary>{faq.pergunta}</summary>
+            <div className="answer-container">
+              <p>{faq.resposta}</p>
+            </div>
+          </details>
+        ));
+      }
 
 
     return (

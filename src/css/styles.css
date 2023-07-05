@@ -557,22 +557,40 @@ details {
     text-align: start;
     margin: 20px;
     cursor: pointer;
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+details[open] {
+    max-height: 500px;
+}
+
+.answer-container {
+    max-width: 425px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+details[open] .answer-container {
+    opacity: 1;
 }
 
 details p {
     padding: 10px;
-    text-align: center;
+    text-align: justify;
     background-color: rgb(190, 188, 188);
     color: black;
     font-size: 17px;
     font-weight: 900;
+    border-radius: 10px;
+    margin-bottom: 0px;
 }
 
 summary {
     text-align: start;
     font-style: italic;
 }
-
 
 
 /* PROVA SOCIAL */
