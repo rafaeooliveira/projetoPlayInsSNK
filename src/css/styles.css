@@ -85,6 +85,12 @@ section {
     background-color: lightgray;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+    color:lightgray;
+}
+
+
 /* HEADER */
 
 .logoStyle {
@@ -256,20 +262,33 @@ h1 {
 
 /* DESTAQUES */
 
-.destaques {
-    display: flex;
-    justify-content: space-evenly;
-
+.cardDestaques {
+    padding: 20px;
 }
 
-.destaques p, .destaques h3, .destaques button {
-    margin: 18px;
+.cardDestaques div {
+    background-color: #fff;
+    width: 325px;
+    height: 325px;
+    border-radius: 325px;
+    border: 10px double darkgray;
+    display: inline-block;
 }
 
-.destaques img {
+.cardDestaques div img {
     width: 275px;
     height: 234px;
     margin-bottom: 40px;
+}
+
+.cardDestaques p {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.destaques {
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
@@ -281,25 +300,52 @@ h1 {
     margin-left: 50px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: rgb(255, 255, 255);
-}
-
 /* GALERIA */
 
 @keyframes seesaw {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(10deg); }
-    20% { transform: rotate(-10deg); }
-    30% { transform: rotate(10deg); }
-    40% { transform: rotate(-10deg); }
-    50% { transform: rotate(10deg); }
-    60% { transform: rotate(-10deg); }
-    70% { transform: rotate(10deg); }
-    80% { transform: rotate(-10deg); }
-    90% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(10deg);
+    }
+
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-10deg);
+    }
+
+    90% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .btnWhats:hover {
