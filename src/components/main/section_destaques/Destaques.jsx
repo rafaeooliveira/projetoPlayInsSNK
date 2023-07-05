@@ -105,7 +105,7 @@ export default function Destaques() {
                 {produtos.map((produto) => (
                     <SwiperSlide key={produto.id}>
                         <div className="cardDestaques">
-                            <div>
+                            <div className='caixaImgCard'>
                                 <img src={produto.imagem} alt={`Destaque ${produto.id}`} />
                             </div>
                             <h2>{produto.titulo}</h2>

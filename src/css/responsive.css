@@ -112,6 +112,21 @@
 
     /* DESTAQUES */
 
+    .cardDestaques div {
+        background-color: #fff;
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        border: 10px double darkgray;
+        display: inline-block;
+    }
+    
+    .cardDestaques div img {
+        width: 250px;
+        height: 209px;
+        margin-bottom: 40px;
+    }
+
     .fundo {
         background-color: black;
         width: 80%;

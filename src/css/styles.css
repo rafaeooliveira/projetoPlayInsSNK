@@ -87,7 +87,7 @@ section {
 
 .swiper-button-prev,
 .swiper-button-next {
-    color:lightgray;
+    color: lightgray;
 }
 
 
@@ -279,6 +279,10 @@ h1 {
     width: 275px;
     height: 234px;
     margin-bottom: 40px;
+}
+
+.caixaImgCard {
+    margin-bottom: 20px;
 }
 
 .cardDestaques p {
