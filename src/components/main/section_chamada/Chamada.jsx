@@ -1,8 +1,7 @@
 import titulosDescricoes from "../../../js/titulosDescricoes.js";
 import Titulo from "../common/Titulo";
 import Titulo2 from "../common/Titulo2";
-import Tenis from "../../../img/tenis_grande.png";
-import IconPlayWhite from "../../../img/iconPlayWhite.png";
+
 
 import { useEffect, useState } from "react"
 import { useRef } from "react";
@@ -59,14 +58,14 @@ export default function Chamada(){
 
     return(
         <section id="chamada" className="callText" >  
-            <button id="btnPlayHighlights" onClick={playVideoFullView} title="Assista os hightlights"><img src={IconPlayWhite}/></button>
+            <button id="btnPlayHighlights" onClick={playVideoFullView} title="Assista os hightlights"><img src="./img/iconPlayWhite.png"/></button>
             <div ref={tirarTexto} className="contentChamada">
                     <div className="caixaTitulo1Chamada">
                         <Titulo titulo={titulosDescricoes.chamada.titulo}/>
                     </div>
                     <div className="caixaImagensChamada">
                         <div id="bola"></div>
-                        <img id="tenis" src={Tenis}/>   
+                        <img id="tenis" src="./img/tenis_grande.png"/>   
                     </div>
                     <div className="caixaTitulo2Chamada">
                     <Titulo2 titulo={titulosDescricoes.chamada.subtitulo} />

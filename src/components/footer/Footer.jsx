@@ -1,7 +1,4 @@
 import Marca from "../main/common/Marca"
-import Facebook from '../../img/Facebook.png'
-import Instagram from '../../img/Instagram.png'
-import LinkedIn from '../../img/LinkedIn.png'
 
 export default function Footer(){
     return(
@@ -10,9 +7,9 @@ export default function Footer(){
             <Marca />
             <div>
             <div className="redesSociais">
-                <img src={Facebook} alt="" />
-                <img src={Instagram} alt="" />
-                <img src={LinkedIn} alt="" />
+                <img src="./img/Facebook.png" alt="" />
+                <img src="./img/Instagram.png" alt="" />
+                <img src="./img/LinkedIn.png" alt="" />
             </div> 
             </div>
                        

@@ -1,16 +1,14 @@
 import Titulo from "../common/Titulo";
 import titulosDescricoes from "../../../js/titulosDescricoes.js"
-import Jordan from '../../../img/jordan.png'
-import Tenis from '../../../img/tenisGaleria.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Livro from '../../../img/livro.jpg'
+
 
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar, A11y, Controller, Autoplay } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Controller, Autoplay } from "swiper";
 import { useState } from "react";
 
 export default function Galeria() {
@@ -57,14 +55,13 @@ export default function Galeria() {
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation={true}
-                scrollbar={true}
                 pagination={true}
                 autoplay={autoplayOptions}
             >
                 <SwiperSlide>
                     <Titulo titulo={titulosDescricoes["galeria"].titulo1} />
                     <div className="jordan">
-                        <img src={Jordan} alt="Imagem do jogador Jordan" />
+                        <img src="./img/jordan.png" alt="Imagem do jogador Jordan" />
                         <div>
                             <p>
                                 {showMore ? textJordan : `${textJordan.substring(0, 250)}`}
@@ -74,8 +71,8 @@ export default function Galeria() {
                             </p>
                             <div className="tenis">
                                 <p>Air Jordan 4
-                                    R$1.799,00</p>
-                                <img src={Tenis} alt="tenis Air Jordan 4" />
+                                    <span>R$1.799,00</span></p>
+                                <img src="./img/tenisGaleria.png" alt="tenis Air Jordan 4" />
                             </div>
 
                         </div>
@@ -94,7 +91,7 @@ export default function Galeria() {
                 <SwiperSlide>
                     <Titulo titulo={titulosDescricoes.galeria.titulo3} />
                     <div className="livro">
-                        <img src={Livro} alt="Livro a marca da vitória" />
+                        <img src="./img/livro.jpg" alt="Livro a marca da vitória" />
                         <p>
                             {showMore ? textLivro : `${textLivro.substring(0, 250)}`}
                             <button className="btn btn-dark" onClick={() => setShowMore(!showMore)}>

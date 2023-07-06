@@ -1,5 +1,3 @@
-import Stars from '../../../img/stars.png'
-
 export default function Review({nome, image, avaliacao}){
 
     return(
@@ -7,7 +5,7 @@ export default function Review({nome, image, avaliacao}){
             <img src={`./img/${image}`} alt="" />
             <b>{nome}</b>
             <p>{avaliacao}</p>
-            <img src={Stars} alt="" />
+            <img src="./img/stars.png" alt="" />
         </div>
     )
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import WhatsappImg from '../../../img/WhatsApp.png'
+
 
 export default function Botao({value, titulo}){
 
@@ -22,7 +22,7 @@ const botao = {
     fontSize: '24px',
     border: '3px solid white',
     cursor: 'pointer',
-    backgroundImage: `url(${WhatsappImg})`,
+    backgroundImage: `url(./img/WhatsApp.png)`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center right 10px'
 }

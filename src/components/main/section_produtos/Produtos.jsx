@@ -2,21 +2,11 @@ import React, { useState, useEffect } from "react";
 import Titulo from "../common/Titulo";
 import titulosDescricoes from "../../../js/titulosDescricoes.js";
 import Card from "../common/ImgCard";
-import BasketBall from "../../../img/tenis_basketball.png";
-import LifeStyle from "../../../img/tenis_life_style.png";
-import Performace from "../../../img/tenis_performace.png";
-import Camisetas from "../../../img/camisetas.png";
-import Moletons from "../../../img/moletons.png";
-import Shorts from "../../../img/shorts.png";
-import Bones from "../../../img/bones.png";
-import Meias from "../../../img/meias.png";
-import Faixas from "../../../img/faixas.png";
 import Titulo3 from "../common/Titulo3";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Scrollbar, A11y, Controller } from "swiper";
 
 export default function Produtos() {
     const [produtos, setProdutos] = useState("");
@@ -31,51 +21,51 @@ export default function Produtos() {
         tenis: [
             {
                 title: "Tênis de Basketball",
-                image: BasketBall,
+                image: "./img/tenis_basketball.png",
                 category: "Basketball",
             },
             {
                 title: "Tênis Lifestyle",
-                image: LifeStyle,
+                image: "./img/tenis_life_style.png",
                 category: "LifeStyle",
             },
             {
                 title: "Tênis de Performance",
-                image: Performace,
+                image: "./img/tenis_performace.png",
                 category: "Performace",
             },
         ],
         diaadia: [
             {
                 title: "Camisetas",
-                image: Camisetas,
+                image: "./img/camisetas.png",
                 category: "Camisetas",
             },
             {
                 title: "Moletons",
-                image: Moletons,
+                image: "./img/moletons.png",
                 category: "Moletons",
             },
             {
                 title: "Shorts",
-                image: Shorts,
+                image: "./img/shorts.png",
                 category: "Shorts",
             },
         ],
         acessorios: [
             {
                 title: "Bonés",
-                image: Bones,
+                image: "./img/bones.png",
                 category: "Bonês",
             },
             {
                 title: "Meias",
-                image: Meias,
+                image: "./img/meias.png",
                 category: "Meias",
             },
             {
                 title: "Faixas",
-                image: Faixas,
+                image: "./img/faixas.png",
                 category: "Faixas",
             },
         ],
