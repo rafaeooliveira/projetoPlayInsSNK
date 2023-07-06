@@ -113,6 +113,28 @@
         border-radius: 50%;
     }
 
+    .video-container iframe {
+        height: 100vh;
+        top: -20%;
+        left: -70%;
+        width: 320%;
+        height: calc(100% + 250px);
+        transition: height 3s ease, top 3s ease, left 3s ease, width 3s ease;
+    }
+
+    .video-container-alto iframe {
+        position: absolute;
+        top: -125px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 250px);
+        opacity: 1;
+        pointer-events: none;
+        transition: opacity 3s ease;
+        transition: height 3s ease, top 3s ease, left 3s ease, width 3s ease, opacity 3s ease;
+    }
+    
+
     /* PRODUTOS */
 
 
