@@ -78,7 +78,7 @@ section {
 
 .navigation-menu li.active {
     background-color: #d6d4d4;
-    background-image: url("./img/ball.png");
+    background-image: url("../img/ball.png");
     /* Outros estilos de destaque para a seção atual */
 }
 
