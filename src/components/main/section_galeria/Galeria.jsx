@@ -1,18 +1,13 @@
 import Titulo from "../common/Titulo";
-import titulosDescricoes from "../../../js/titulosDescricoes.js"
+import titulosDescricoes from "../../../js/titulosDescricoes.js";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import { Navigation, Pagination, Scrollbar, A11y, Controller, Autoplay } from "swiper";
+import SwiperCore, { Pagination } from 'swiper';
+import 'swiper/css';
 import { useState } from "react";
 
-export default function Galeria() {
+SwiperCore.use([Pagination]);
 
+export default function Galeria() {
     const [showMore, setShowMore] = useState(false);
 
     const textJordan = 'O primeiro tênis Air Jordan foi produzido para o ex-jogador de basquete do Hall of Fame Michael Jordan' +
@@ -40,23 +35,23 @@ export default function Galeria() {
         'Com uma visão ousada e a crença no poder transformador do esporte, juntos eles criaram uma marca e uma' +
         'cultura que mudariam os parâmetros de desempenho e superação para sempre.';
 
-    const autoplayOptions = {
-        delay: 3000,
-        disableOnInteraction: true,
+    const swiperParams = {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        navigation: true,
+        pagination: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+        },
     };
 
     return (
         <section id="galeria" className="sectionMarge">
 
-
-
             <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y, Controller, Autoplay]}
-                spaceBetween={50}
-                slidesPerView={1}
-                navigation={true}
-                pagination={true}
-                autoplay={autoplayOptions}
+                {...swiperParams}
+
             >
                 <SwiperSlide>
                     <Titulo titulo={titulosDescricoes["galeria"].titulo1} />
