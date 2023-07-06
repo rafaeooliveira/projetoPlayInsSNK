@@ -7,50 +7,54 @@ import { useEffect, useState } from "react"
 import { useRef } from "react";
 
 
-export default function Chamada() {
+export default function Chamada(){
 
     const [urlHightlights, setUrlHightlights] = useState("");
     const [opacidade, setOpacidade] = useState(0.5);
     const tirarTexto = useRef(null);
 
-    useEffect(() => {
+    useEffect(()=>{
         callApiAllSportsForAdquireURLVideo();
     })
 
 
     function callApiAllSportsForAdquireURLVideo() {
-        const url = 'https://allsportsapi2.p.rapidapi.com/api/basketball/tournament/132/media';
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': '04364727e8mshdc9fa4467895029p126bfejsn8cac89b7a0f1',
-                'X-RapidAPI-Host': 'allsportsapi2.p.rapidapi.com'
+    const url = 'https://allsportsapi2.p.rapidapi.com/api/basketball/tournament/132/media';
+    const options = {
+        method: 'GET',
+        headers: {
+             'X-RapidAPI-Key': '04364727e8mshdc9fa4467895029p126bfejsn8cac89b7a0f1',
+             'X-RapidAPI-Host': 'allsportsapi2.p.rapidapi.com'
+        }
+    };
+
+    fetch(url, options)
+    .then(response => response.json())
+    .then(data => {
+        let urlTopFive = data.media.filter((e)=>(e.subtitle == "Top 5")).map((e)=> e.sourceUrl);
+
+        let codeVideoYoutube;
+            if(urlTopFive.indexOf("&") == -1){
+                codeVideoYoutube =  urlTopFive[0].substring(32, urlTopFive[0].length);
+            } else {
+                codeVideoYoutube = urlTopFive[0].substring(32, urlTopFive[0].indexOf("&"));
             }
-        };
 
-        fetch(url, options)
-            .then(response => response.json())
-            .then(data => {
-                let urlTopFive = data.media.filter((e) => (e.subtitle == "Top 5")).map((e) => e.sourceUrl);
-
-                let codeVideoYoutube;
-                if (urlTopFive.indexOf("&") == -1) {
-                    codeVideoYoutube = urlTopFive[0].substring(32, urlTopFive[0].length);
-                } else {
-                    codeVideoYoutube = urlTopFive[0].substring(32, urlTopFive[0].indexOf("&"));
-                }
-
-                let urlFormattedForIframe = "https://www.youtube.com/embed/" + codeVideoYoutube + "?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist=" + codeVideoYoutube;
-                setUrlHightlights(urlFormattedForIframe);
-
-            })
-    }
-
+        let urlFormattedForIframe = "https://www.youtube.com/embed/"+codeVideoYoutube+"?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist="+codeVideoYoutube;
+         setUrlHightlights(urlFormattedForIframe);
+    
+    })
+    .catch(error => {
+        setUrlHightlights("https://www.youtube.com/embed/jbW4f60dCNA?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&playlist=jbW4f60dCNA");
+        console.log(error)
+    });
+}
+   
     const playVideoFullView = () => {
         tirarTexto.current.classList.toggle('retirarContentChamada');
         const novaOpacidade = opacidade === 0.5 ? 1 : 0.5;
         setOpacidade(novaOpacidade);
-    }
+    }   
 
     return (
         <section id="chamada" className="callText" >
@@ -67,19 +71,9 @@ export default function Chamada() {
                 <Titulo2 titulo={titulosDescricoes.chamada.subtitulo} />
                 </div>
             </div>
-            {/* 
             <div className={`video-container ${opacidade === 1 ? 'video-container-alto' : 'video-container'}`}>
-                <iframe id="ytplayer" frameborder="0" allowfullscreen type="text/html" width="100%" height="100%" src={urlHightlights} title="NBA Top Plays"/>                
-            </div>  */}
-
-            <div className={`video-container ${opacidade === 1 ? 'video-container-alto' : 'video-container'}`}>
-                <video id="bgvid" playsinline autoplay muted loop>
-                    <source src="http://localhost:5173/src/img/video.mp4" type="video/mp4" />
-                </video>
+                <iframe id="ytplayer" type="text/html" width="100%" height="100%" src={urlHightlights} title="NBA Top Plays"/>                
             </div>
-
-
-
         </section>
     )
 }
