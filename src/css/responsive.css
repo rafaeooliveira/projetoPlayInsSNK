@@ -1,4 +1,11 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+
+    .logoStyle{
+        margin: 10px;
+        align-items: center;
+        color: azure;
+    }
+
 
     .containerConversaoReviews, .destaques, .sobreFaq, .jordan, .livro {
 
@@ -30,7 +37,7 @@
     .contentChamada {
         all: initial;
         margin: 0 auto;
-        height: 700px;
+        height: 1000px;
         position: relative;
         z-index: 2;
         transition: transform 3s ease;
@@ -45,15 +52,14 @@
         z-index: 1;
         height: 400px;
         width: 300px;
-        margin-left: 10%;
-        text-align: left;
+        margin-left: 15%;
         color: white;
+        
     }
 
     .caixaTitulo1Chamada h1 {
         height: 100%;
         font-size: 60px;
-
     }
 
     .caixaTitulo2Chamada {
@@ -62,7 +68,7 @@
         height: 25px;
         width: 700px;
         margin-top: 50px;
-        margin-left: -325px;
+        margin-left: -290px;
     }
 
     .caixaTitulo2Chamada h2 {
@@ -81,19 +87,18 @@
     #bola {
         position: absolute;
         z-index: 2;
-        height: 125px;
-        width: 125px;
+        height: 100px;
+        width: 100px;
         border-radius: 125px;
         display: inline-block;
-        margin-top: 0%;
     }
 
     #tenis {
         position: relative;
         z-index: 3;
-        width: 175px;
+        width: 130px;
         margin-top: -30%;
-        margin-left: -20px;
+        margin-left: -10px;
     }
 
     #btnPlayHighlights {
@@ -105,6 +110,7 @@
         z-index: 3;
         background-color: #000000;
         border-radius: 50%;
+        margin: 20px;
     }
 
     /* PRODUTOS */
@@ -114,16 +120,16 @@
 
     .cardDestaques div {
         background-color: #fff;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         border-radius: 300px;
         border: 10px double darkgray;
         display: inline-block;
     }
     
     .cardDestaques div img {
-        width: 250px;
-        height: 209px;
+        width: 150px;
+        height: 150px;
         margin-bottom: 40px;
     }
 

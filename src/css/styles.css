@@ -5,7 +5,6 @@ font-family: 'Quantico', sans-serif; */
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 * {
@@ -212,7 +211,7 @@ h1 {
 }
 
 .video-container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: absolute;
@@ -221,7 +220,7 @@ h1 {
     margin-top: 0px;
 }
 
-.video-container iframe {
+/* .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -234,6 +233,37 @@ h1 {
     width: 100%;
     height: calc(100% + 250px);
     transition: opacity 3s ease;
+} */
+
+
+video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto; 
+    opacity: 0.3;
+    transform: translateX(-50%) translateY(-50%); 
+    background-size: cover;
+    transition: opacity 3s ease;
+}
+ 
+   
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 3s ease;
 }
 
 .video-container-alto iframe {
@@ -244,10 +274,9 @@ h1 {
     height: 100%;
     opacity: 1;
     pointer-events: none;
-    top: -60px;
     left: 0;
     width: 100%;
-    height: calc(100% + 250px);
+    height: 100%;
     transition: opacity 3s ease;
 }
 
@@ -441,12 +470,6 @@ h1 {
 
 }
 
-.feedback-aguarde {
-    border: 1px solid #a4a4a4;
-    color: #a4a4a4;
-
-}
-
 
 @keyframes fadeOut {
     0% {
@@ -478,10 +501,6 @@ form {
     width: 500px;
     margin-top: 50px;
 
-}
-form p{
-    color: chocolate;
-    margin-top: -10px;
 }
 
 input, textarea {
