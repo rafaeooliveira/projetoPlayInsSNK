@@ -255,6 +255,12 @@ h1 {
 
 /* PRODUTOS */
 
+.linkProducts{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
 /* DESTAQUES */
 
 .cardDestaques {

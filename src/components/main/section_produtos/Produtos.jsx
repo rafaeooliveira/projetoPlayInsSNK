@@ -72,9 +72,9 @@ export default function Produtos() {
     };
 
     useEffect(() => {
-        handleResize(); 
+        handleResize();
 
-        window.addEventListener("resize", handleResize); 
+        window.addEventListener("resize", handleResize);
 
         return () => {
             window.removeEventListener("resize", handleResize);
@@ -93,13 +93,15 @@ export default function Produtos() {
         setProdutos(
             <>
                 <Swiper
-                   {...swiperParams}
+                    {...swiperParams}
                 >
                     {produtosJSON.tenis.map((produto, index) => (
                         <SwiperSlide key={index}>
                             <div>
                                 <Titulo3 titulo={produto.title} />
-                                <Card image={produto.image} categoryName={produto.category} />
+                                <a href="https://drive.google.com/file/d/10YOmLU0O3x08LvjWkuMK7h-RLgXP4tAw/view?usp=drive_link" className="linkProducts" target="_blank">
+                                    <Card image={produto.image} categoryName={produto.category} />
+                                </a>
                             </div>
                         </SwiperSlide>
                     ))}
@@ -112,7 +114,9 @@ export default function Produtos() {
                         <SwiperSlide key={index}>
                             <div>
                                 <Titulo3 titulo={produto.title} />
-                                <Card image={produto.image} categoryName={produto.category} />
+                                <a href="https://drive.google.com/file/d/10YOmLU0O3x08LvjWkuMK7h-RLgXP4tAw/view?usp=drive_link" className="linkProducts" target="_blank">
+                                    <Card image={produto.image} categoryName={produto.category} />
+                                </a>
                             </div>
                         </SwiperSlide>
                     ))}
@@ -125,7 +129,9 @@ export default function Produtos() {
                         <SwiperSlide key={index}>
                             <div>
                                 <Titulo3 titulo={produto.title} />
-                                <Card image={produto.image} categoryName={produto.category} />
+                                <a href="https://drive.google.com/file/d/10YOmLU0O3x08LvjWkuMK7h-RLgXP4tAw/view?usp=drive_link" className="linkProducts" target="_blank">
+                                    <Card image={produto.image} categoryName={produto.category} />
+                                </a>
                             </div>
                         </SwiperSlide>
                     ))}
@@ -140,19 +146,25 @@ export default function Produtos() {
                 <div>
                     <Titulo3 titulo={"Tênis"} />
                     {produtosJSON.tenis.map((produto, index) => (
-                        <Card key={index} image={produto.image} categoryName={produto.category} />
+                        <a href="https://drive.google.com/file/d/10YOmLU0O3x08LvjWkuMK7h-RLgXP4tAw/view?usp=drive_link" className="linkProducts" target="_blank">
+                            <Card key={index} image={produto.image} categoryName={produto.category} />
+                        </a>
                     ))}
                 </div>
                 <div>
                     <Titulo3 titulo={"Para o dia a dia"} />
                     {produtosJSON.diaadia.map((produto, index) => (
-                        <Card key={index} image={produto.image} categoryName={produto.category} />
+                        <a href="https://drive.google.com/file/d/10YOmLU0O3x08LvjWkuMK7h-RLgXP4tAw/view?usp=drive_link" className="linkProducts" target="_blank">
+                            <Card key={index} image={produto.image} categoryName={produto.category} />
+                        </a>
                     ))}
                 </div>
                 <div>
                     <Titulo3 titulo={"Acessórios"} />
                     {produtosJSON.acessorios.map((produto, index) => (
-                        <Card key={index} image={produto.image} categoryName={produto.category} />
+                        <a href="https://drive.google.com/file/d/10YOmLU0O3x08LvjWkuMK7h-RLgXP4tAw/view?usp=drive_link" className="linkProducts" target="_blank">
+                            <Card key={index} image={produto.image} categoryName={produto.category} />
+                        </a>
                     ))}
                 </div>
             </>
