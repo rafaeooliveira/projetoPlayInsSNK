@@ -14,6 +14,8 @@ export default function Whatsapp(){
             darkMode
             notification
             notificationDelay={5}
+            allowClickAway
+            allowEsc
             />
     )
 }
