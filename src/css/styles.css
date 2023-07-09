@@ -549,6 +549,27 @@ input[type="submit"]:hover:after {
     opacity: 1;
 }
 
+.permissao{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 10px 20px;
+}
+
+form > .permissao  p{
+    margin: 0px;
+    font-size: 14px;
+    color: white;
+}
+
+.permissao input{
+    width: 70px;
+   
+}
+.permissao a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
 
 /* SOBRE / FAQ */
 

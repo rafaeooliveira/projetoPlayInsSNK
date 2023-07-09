@@ -108,6 +108,11 @@ export default function ConversaoReviews() {
                         <textarea {...register("mensagem", { required: true })}></textarea>
                         {errors.mensagem && <p>Por favor, preencha a mensagem.</p>}
 
+                        <div className="permissao">
+                            <input type="checkbox" name="" id="" required />
+                            <p>Eu aceito os termos, <a href="./termo.html" target="_blank">clique para ler</a></p>
+                        </div>
+
                         <input type="submit" value="Enviar" />
                     </form>
 
