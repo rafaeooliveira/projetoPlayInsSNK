@@ -96,6 +96,7 @@ section {
 
 .logoStyle {
     display: flex;
+    align-items: center;
     gap: 20px;
     font-size: 20px;
     position: absolute;
@@ -385,6 +386,7 @@ h1 {
     display: flex;
     width: 50%;
     margin: auto;
+    
 }
 
 .tenis > p {

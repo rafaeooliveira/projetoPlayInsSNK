@@ -82,7 +82,7 @@ export default function Produtos() {
     }, []);
 
     function handleResize() {
-        if (window.innerWidth < 800) {
+        if (window.innerWidth < 1070) {
             mobile();
         } else {
             desktop();
