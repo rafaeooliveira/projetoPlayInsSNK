@@ -260,6 +260,18 @@
         width: 80%;
     }
 
+    .permissao{
+        margin: 0px 0px 10px 20px;
+    }
+    
+    form > .permissao  p{
+        margin: 0px 0px 0px -30px;
+    }
+
+    input[type="checkbox"] {
+        margin: 0px 0px 0px -10px;
+    }
+
 }
 
 /* TABLET */
