@@ -135,9 +135,14 @@
 
     /* PRODUTOS */
 
-    .fundo img{
-        width: 40%;
+    #produtos img{
+        width: 100%;
     }
+
+    #produtos .swiper-slide > div{
+        width: 80%;
+        margin: auto;
+    } 
 
     /* DESTAQUES */
 
