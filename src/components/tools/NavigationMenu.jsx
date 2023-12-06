@@ -33,37 +33,37 @@ export default function NavigationMenu() {
       )}
       {currentSection !== 'chamada' && !!currentSection && (
         <li className={currentSection === 'chamada' ? 'active' : ''}>
-          <a href="#chamada" title='Topo' />
+          <a href="#chamada" title='Topo' accesskey="1"/>
         </li>
       )}
       {currentSection !== 'chamada' && !!currentSection && (
         <li className={currentSection === 'produtos' ? 'active' : ''}>
-          <a href="#produtos" title='Nossos Produtos' />
+          <a href="#produtos" title='Nossos Produtos' accesskey="2"/>
         </li>
       )}
       {currentSection !== 'chamada' && !!currentSection && (
         <li className={currentSection === 'destaques' ? 'active' : ''}>
-          <a href="#destaques" title='Destaques' />
+          <a href="#destaques" title='Destaques' accesskey="3" />
         </li>
       )}
       {currentSection !== 'chamada' && !!currentSection && (
         <li className={currentSection === 'galeria' ? 'active' : ''}>
-          <a href="#galeria" title='Galeria' />
+          <a href="#galeria" title='Galeria' accesskey="4"/>
         </li>
       )}
       {currentSection !== 'chamada' && !!currentSection && (
         <li className={currentSection === 'marcas' ? 'active' : ''}>
-          <a href="#marcas" title='Marcas' />
+          <a href="#marcas" title='Marcas' accesskey="5" />
         </li>
       )}
       {currentSection !== 'chamada' && !!currentSection && (
         <li className={currentSection === 'sobreFaq' ? 'active' : ''}>
-          <a href="#sobreFaq" title='Sobre e FAQ' />
+          <a href="#sobreFaq" title='Sobre e FAQ' accesskey="6"/>
         </li>
       )}
       {currentSection !== 'chamada' && !!currentSection && (
         <li className={currentSection === 'conversaoReviews' ? 'active' : ''}>
-          <a href="#conversaoReviews" title='Mensagem e Reviews' />
+          <a href="#conversaoReviews" title='Mensagem e Reviews' accesskey="7"/>
         </li>
       )}
     </ul>
